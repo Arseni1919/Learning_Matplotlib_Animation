@@ -95,7 +95,22 @@ ani.save(filename="/tmp/html_example.png", writer="html")
 ```
 
 
+FFMpegWriter:
 
+```python
+ani.save(filename="/tmp/ffmpeg_example.mkv", writer="ffmpeg")
+ani.save(filename="/tmp/ffmpeg_example.mp4", writer="ffmpeg")
+ani.save(filename="/tmp/ffmpeg_example.mjpeg", writer="ffmpeg")
+```
+
+Imagemagick writers:
+
+```python
+ani.save(filename="/tmp/imagemagick_example.gif", writer="imagemagick")
+ani.save(filename="/tmp/imagemagick_example.webp", writer="imagemagick")
+ani.save(filename="apng:/tmp/imagemagick_example.apng",
+         writer="imagemagick", extra_args=["-quality", "100"])
+```
 
 
 
